@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahyadri Farms Harvest Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <h1>Sahyadri Farms</h1>
+    <p>Grape Harvest Management System</p>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Harvest Entry</h2>
+
+        <label>Farmer Name</label>
+        <input type="text" id="farmer">
+
+        <label>Mobile Number</label>
+        <input type="text" id="mobile">
+
+        <label>Vehicle Number</label>
+        <input type="text" id="vehicle">
+
+        <label>Weight (Kg)</label>
+        <input type="number" id="weight">
+
+        <button onclick="saveData()">Save Harvest</button>
+
+    </div>
+
+    <div class="table">
+
+        <h2>Today's Harvest</h2>
+
+        <table>
+
+            <thead>
+
+            <tr>
+
+                <th>Farmer</th>
+                <th>Vehicle</th>
+                <th>Weight</th>
+
+            </tr>
+
+            </thead>
+
+            <tbody id="tableData">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

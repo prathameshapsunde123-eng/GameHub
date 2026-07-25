@@ -1,0 +1,71 @@
+h1{
+    color: rgb(186, 211, 99);
+    background-color: rgb(99, 65, 19);
+    text-align: center;
+    border: 5px white dotted ;
+    line-height: 50px;
+    width: 1000px;
+    margin-left: 100px;
+}
+#A{
+    height: 550px;
+    width: 200px;
+    margin-left: 150px;
+    border-width: 10px;
+    border-color: black;
+    color: black;
+    border-style: solid;
+    border-radius: 50px;
+}
+#R{
+    background-color: red;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 50PX;
+
+}
+#Y{
+    background-color: yellow;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 50PX;
+    
+
+}
+#G{
+    background-color: green;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 50PX;
+
+}
+#H{
+    height: 550px;
+    width: 0px;
+    margin-left: 240px;
+    border-width: 20px;
+    border-color: black;
+    color: black;
+    border-style: solid;
+
+}
+
+body{
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+div{
+    border-width: 5px;
+    border-color:black ;
+    background-color: rgb(31, 103, 140) ;
+    border-style:solid ;
+    padding: 0px;
+    
+}

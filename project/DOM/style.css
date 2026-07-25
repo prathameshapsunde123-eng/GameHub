@@ -1,0 +1,9 @@
+h1{
+    color: blue;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    color: black;
+    border: solid black 1px;
+}

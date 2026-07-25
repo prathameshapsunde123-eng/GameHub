@@ -1,0 +1,13 @@
+#outer{
+    height: 100px;
+    width: 100px;
+    color: aquamarine;
+    background-color: red;
+}
+#inner{
+    height: 10vh;
+    margin : 0.8em;
+    width: 90%;
+    color: orange;
+    background-color: black;
+}

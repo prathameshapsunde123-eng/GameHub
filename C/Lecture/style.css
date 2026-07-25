@@ -1,0 +1,17 @@
+h1{
+    color: red;
+}
+p{
+    text-align: justify;
+    font-weight:lighter;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-size: 15px;
+    line-height:20px;
+    text-transform :capitalize  ;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline ;
+
+}

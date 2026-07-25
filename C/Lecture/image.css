@@ -1,0 +1,41 @@
+h1{
+    color:rgb(150, 33, 33);
+    text-align: center;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+    background-size:cover;
+}
+
+#img1{
+    background-image: url(https://i.pinimg.com/736x/a6/ba/03/a6ba034655e3f0e9474058cf98d7f0ae.jpg);
+}
+#img2{
+    background-image: url(https://static.cricketgully.com/news_featured/rohit-sharma-biography-age-family-career-achievements-ipl-all-details-0c7f41ea22.webp);
+    background-size: cover;
+    background-position-x:center ;
+    visibility: hidden;
+}
+
+#img3{
+    background-image: url(https://www.mumbaiindians.com/static-assets/waf-images/c1/bb/96/4-3/592-444/EmZXK6JZIL.jpg);
+    background-position-x:center ;
+    
+}
+#img4{
+    background-image: url(https://sportingbug.com/wp-content/uploads/2025/06/1000199356-825x1024.jpg);
+}
+
+#img5{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv3RDZ0wko3WgP4baUXnaNwYdIke9OkmF96Q&s) ;
+}
+body{
+    background-image: url(https://c.ndtvimg.com/2025-10/vipnsnf8_rohit-sharma-in-icc-odi-batting-rankings_625x300_29_October_25.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=738);
+    background-size: cover;
+
+}

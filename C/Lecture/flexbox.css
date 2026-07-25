@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+    color: coral;
+    text-decoration-line: underline;
+}
+div{
+    height: 100px;
+    width: 100px;
+    border : 2px solid black;
+    display: inline;
+    margin: 2px;
+}
+
+#container{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: flex-end; */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    align-content:center ;
+
+}
+
+#box1{
+    background-color:rgb(170, 102, 85);
+}
+#box2{
+    background-color:rgb(180, 176, 67);
+    height: 200px;
+    width: 200px;
+}
+#box3{
+    background-color:rgb(112, 170, 85);
+}
+#box4{
+    background-color:rgb(85, 152, 170);
+}
+#box5{
+    background-color:rgb(170, 85, 166);
+}

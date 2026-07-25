@@ -1,0 +1,30 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(156, 100, 27);
+    border: 2px dashed black;
+    transition-property:all;
+    transition-duration: 2s;
+    transition-timing-function:steps();
+    /* rotate: y 50deg; */
+}
+
+div:hover{
+    background-color: orange;
+    color:blueviolet;
+    border: 2px solid black;
+    /* font-style: italic;
+    font-size: 30px;
+    height: 300px;
+    width: 300px; */
+    transform: translateX(80px);
+}
+
+div:active{
+    background-color: rgb(129, 145, 7);
+    color:rgb(14, 51, 171);
+    border: 2px dashed black;
+    font-style: normal;
+    font-size: 10px;
+    transform: skew(40deg);
+}

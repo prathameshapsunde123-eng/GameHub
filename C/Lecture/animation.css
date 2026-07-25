@@ -1,0 +1,28 @@
+div{
+    color: black;
+    background-color: orange;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top:100px;
+    left: 100px;
+    /* animation-name: colorAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate; */
+
+    animation: colorAnimation 2s ease-in 0s infinite normal;    /*short hand*/
+
+}
+
+@keyframes colorAnimation{
+    from { background-color:orange; 
+    }
+    to { background-color: green;
+        position: relative;
+        left:400px;
+    }
+}

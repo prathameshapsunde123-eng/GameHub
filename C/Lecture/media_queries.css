@@ -1,0 +1,22 @@
+h1{
+    color: red;
+    text-align: center;
+}
+div{
+    background-color: orange;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+@media(min-width :700px ){
+    div{
+        background-color: green;
+    }
+}
+
+@media(max-width :600px){
+    div{
+        background-color: red;
+    }
+}

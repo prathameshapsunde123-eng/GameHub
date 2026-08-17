@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grape Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            🍇 Grape<span>Manager</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#add-record">Add Harvest</a>
+            <a href="#records">Records</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <p class="tagline">SMART FARM MANAGEMENT</p>
+
+            <h1>
+                Grape Harvest
+                <span>Management System</span>
+            </h1>
+
+            <p>
+                Manage grape production, quantity, rates, farmers,
+                crates and sales from one simple dashboard.
+            </p>
+
+            <a href="#add-record" class="hero-btn">
+                + Add Harvest Record
+            </a>
+        </div>
+
+        <div class="hero-grape" >
+        <img src ="https://static.vecteezy.com/system/resources/thumbnails/046/822/683/small/a-cluster-of-grapes-isolated-on-a-transparent-background-png.png">
+        </div>
+    </section>
+
+    <section id="dashboard" class="container">
+
+        <div class="section-title">
+            <div>
+                <p class="small-title">OVERVIEW</p>
+                <h2>Farm Dashboard</h2>
+            </div>
+        </div>
+
+        <div class="dashboard">
+
+            <div class="card">
+                <div class="card-icon">🍇</div>
+                <div>
+                    <p>Total Quantity</p>
+                    <h3 id="totalQuantity">0 kg</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📦</div>
+                <div>
+                    <p>Total Crates</p>
+                    <h3 id="totalCrates">0</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💰</div>
+                <div>
+                    <p>Total Revenue</p>
+                    <h3 id="totalRevenue">₹0</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📋</div>
+                <div>
+                    <p>Total Records</p>
+                    <h3 id="totalRecords">0</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="add-record" class="container">
+
+        <div class="section-title">
+            <div>
+                <p class="small-title">HARVEST MANAGEMENT</p>
+                <h2>Add Grape Harvest</h2>
+            </div>
+        </div>
+
+        <div class="form-container">
+
+            <form id="grapeForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label>Farmer Name</label>
+
+                        <input
+                            type="text"
+                            id="farmer"
+                            placeholder="Enter farmer name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Grape Type</label>
+
+                        <select id="grapeType" required>
+                            <option value="">Select variety</option>
+                            <option>Thompson Seedless</option>
+                            <option>Sonaka</option>
+                            <option>Sharad Seedless</option>
+                            <option>Flame Seedless</option>
+                            <option>Manik Chaman</option>
+                            <option>Red Globe</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Quantity (KG)</label>
+
+                        <input
+                            type="number"
+                            id="quantity"
+                            placeholder="e.g. 500"
+                            min="0"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Rate per KG (₹)</label>
+
+                        <input
+                            type="number"
+                            id="rate"
+                            placeholder="e.g. 80"
+                            min="0"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Number of Crates</label>
+
+                        <input
+                            type="number"
+                            id="crates"
+                            placeholder="e.g. 50"
+                            min="0"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Quality / Grade</label>
+
+                        <select id="quality">
+                            <option value="A+">A+ Premium</option>
+                            <option value="A">A Grade</option>
+                            <option value="B">B Grade</option>
+                            <option value="C">C Grade</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Harvest Date</label>
+
+                        <input
+                            type="date"
+                            id="harvestDate"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Farm Location</label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="e.g. Nashik"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Buyer</label>
+
+                        <input
+                            type="text"
+                            id="buyer"
+                            placeholder="Enter buyer name"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Total Amount</label>
+
+                        <input
+                            type="text"
+                            id="total"
+                            placeholder="₹0"
+                            readonly
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-group full">
+                    <label>Notes</label>
+
+                    <textarea
+                        id="notes"
+                        rows="3"
+                        placeholder="Additional information..."
+                    ></textarea>
+                </div>
+
+                <div class="form-actions">
+
+                    <button
+                        type="submit"
+                        class="primary-btn"
+                    >
+                        + Add Record
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="secondary-btn"
+                        id="resetBtn"
+                    >
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <section id="records" class="container records-section">
+
+        <div class="section-title">
+
+            <div>
+                <p class="small-title">HARVEST DATA</p>
+                <h2>Grape Records</h2>
+            </div>
+
+            <input
+                type="text"
+                id="search"
+                class="search"
+                placeholder="🔍 Search farmer, type, buyer..."
+            >
+
+        </div>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Farmer</th>
+                        <th>Grape Type</th>
+                        <th>Quantity</th>
+                        <th>Crates</th>
+                        <th>Rate</th>
+                        <th>Quality</th>
+                        <th>Total</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="recordsTable"></tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            🍇 GrapeManager — Smart Grape Farm Management System
+        </p>
+
+        <p>
+            © 2026
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
